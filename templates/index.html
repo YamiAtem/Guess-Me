@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>HANGMAN</title>
+
+    <!-- Jquery -->
+    <script crossorigin="anonymous"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CSS and JS -->
+    <link href="/static/style.css" rel="stylesheet"/>
+    <script src="/static/game.js"></script>
+
+    <div class="container pt-3">
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <h1>GUESS ME!</h1>
+                <p>Click on the alphabets to guess the word!</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center" id="alphabets">
+                <button class="btn btn-outline-primary clickable" id="a" type="button">a</button>
+                <button class="btn btn-outline-primary clickable" id="b" type="button">b</button>
+                <button class="btn btn-outline-primary clickable" id="c" type="button">c</button>
+                <button class="btn btn-outline-primary clickable" id="d" type="button">d</button>
+                <button class="btn btn-outline-primary clickable" id="e" type="button">e</button>
+                <button class="btn btn-outline-primary clickable" id="f" type="button">f</button>
+                <button class="btn btn-outline-primary clickable" id="g" type="button">g</button>
+                <button class="btn btn-outline-primary clickable" id="h" type="button">h</button>
+                <button class="btn btn-outline-primary clickable" id="i" type="button">i</button>
+                <button class="btn btn-outline-primary clickable" id="j" type="button">j</button>
+                <button class="btn btn-outline-primary clickable" id="k" type="button">k</button>
+                <button class="btn btn-outline-primary clickable" id="l" type="button">l</button>
+                <button class="btn btn-outline-primary clickable" id="m" type="button">m</button>
+                <button class="btn btn-outline-primary clickable" id="n" type="button">n</button>
+                <button class="btn btn-outline-primary clickable" id="o" type="button">o</button>
+                <button class="btn btn-outline-primary clickable" id="p" type="button">p</button>
+                <button class="btn btn-outline-primary clickable" id="q" type="button">q</button>
+                <button class="btn btn-outline-primary clickable" id="r" type="button">r</button>
+                <button class="btn btn-outline-primary clickable" id="s" type="button">s</button>
+                <button class="btn btn-outline-primary clickable" id="t" type="button">t</button>
+                <button class="btn btn-outline-primary clickable" id="u" type="button">u</button>
+                <button class="btn btn-outline-primary clickable" id="v" type="button">v</button>
+                <button class="btn btn-outline-primary clickable" id="w" type="button">w</button>
+                <button class="btn btn-outline-primary clickable" id="x" type="button">x</button>
+                <button class="btn btn-outline-primary clickable" id="y" type="button">y</button>
+                <button class="btn btn-outline-primary clickable" id="z" type="button">z</button>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <span>Remaining Life:</span>
+                <span id="life">5</span>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <span>Hint: Category is</span>
+                <span id="hint"></span>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <p id="blanks"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-sm-4 text-center">
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+</html>

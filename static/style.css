@@ -1,0 +1,14 @@
+body {
+    background-image: url('/static/assets/bg.jpg');
+    font-family: 'Pangolin', cursive;
+    font-size: large;
+}
+
+.display_inline {
+    display: inline;
+    padding: 0.5em;
+}
+
+div {
+    margin: 20px 150px 10px 300px;
+}
